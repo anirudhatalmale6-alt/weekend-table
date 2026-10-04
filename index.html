@@ -21,7 +21,7 @@
         <em>Good food &middot; Good mood</em>
       </span>
     </a>
-    <a href="https://wa.me/447874704457" class="btn btn-solid btn-sm" target="_blank" rel="noopener">Order Now</a>
+    <a href="#build" class="btn btn-solid btn-sm">Order Now</a>
   </div>
 </header>
 
@@ -117,8 +117,88 @@
   </div>
 </section>
 
+<!-- Build a meal -->
+<section class="section section-alt" id="build">
+  <div class="wrap">
+    <h2 class="rule">Build Your Meal</h2>
+    <p class="build-lead">Pick what you'd like, then send it straight over on WhatsApp.</p>
+
+    <div class="build-box">
+      <div class="build-col">
+        <h4>Mains</h4>
+        <div class="pick" data-name="Peppered Chicken" data-price="7">
+          <span class="pick-name">Peppered Chicken <em>£7</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Peppered Chicken">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Peppered Chicken">+</button>
+          </span>
+        </div>
+        <div class="pick" data-name="Peppered Turkey Wings" data-price="7">
+          <span class="pick-name">Peppered Turkey Wings <em>£7</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Peppered Turkey Wings">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Peppered Turkey Wings">+</button>
+          </span>
+        </div>
+
+        <h4>Sides</h4>
+        <div class="pick" data-name="Fried Plantain" data-price="3">
+          <span class="pick-name">Fried Plantain <em>£3</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Fried Plantain">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Fried Plantain">+</button>
+          </span>
+        </div>
+        <div class="pick" data-name="Fried Rice" data-price="5">
+          <span class="pick-name">Fried Rice <em>£5</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Fried Rice">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Fried Rice">+</button>
+          </span>
+        </div>
+        <div class="pick" data-name="Jollof Rice" data-price="5">
+          <span class="pick-name">Jollof Rice <em>£5</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Jollof Rice">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Jollof Rice">+</button>
+          </span>
+        </div>
+        <div class="pick" data-name="Steamed White Rice" data-price="3">
+          <span class="pick-name">Steamed White Rice <em>£3</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Steamed White Rice">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Steamed White Rice">+</button>
+          </span>
+        </div>
+        <div class="pick" data-name="Peppered Beef Sauce" data-price="6">
+          <span class="pick-name">Peppered Beef Sauce <em>£6</em></span>
+          <span class="stepper">
+            <button type="button" class="minus" aria-label="Remove one Peppered Beef Sauce">&minus;</button>
+            <output class="qty">0</output>
+            <button type="button" class="plus" aria-label="Add one Peppered Beef Sauce">+</button>
+          </span>
+        </div>
+      </div>
+
+      <aside class="build-summary">
+        <h4>Your Meal</h4>
+        <ul id="summary-list"><li class="empty">Nothing added yet</li></ul>
+        <p class="summary-total"><span>Total</span><strong id="summary-total">£0</strong></p>
+        <a href="https://wa.me/447874704457" id="send-order" class="btn btn-solid" target="_blank" rel="noopener">Send on WhatsApp</a>
+        <p class="summary-note">This opens WhatsApp with your order written out. Nothing is charged here &mdash; she'll confirm the details with you.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <!-- How to order -->
-<section class="section section-alt" id="order">
+<section class="section" id="order">
   <div class="wrap">
     <h2 class="rule">How to Order</h2>
     <div class="steps">
@@ -162,5 +242,6 @@
   <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1S29.1 8.8 29.1 16 23.2 28.8 16 28.8zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1s-1.7-.6-3.2-2c-1.2-1-2-2.3-2.2-2.7s0-.6.2-.8c.2-.2.4-.4.5-.7.2-.2.2-.4.4-.6.1-.3 0-.5 0-.7s-.9-2.1-1.2-2.9c-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
 </a>
 
+<script src="script.js"></script>
 </body>
 </html>
