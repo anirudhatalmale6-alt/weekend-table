@@ -3,65 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Weekend Table · Authentic African Home-Cooked Food</title>
-<meta name="description" content="The Weekend Table — delicious, spicy African home-cooked food made with love. Jollof rice, fried rice, chicken & turkey. Around £10 a meal, delivered to your door. Pre-order Monday to Wednesday.">
+<title>The Weekend Table — Good Food, Good Mood</title>
+<meta name="description" content="Homemade food, made with love. Peppered chicken, turkey wings, jollof and fried rice. Pre-order during the week. Call or WhatsApp 07874 704457.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍛</text></svg>">
 </head>
 <body>
 
-<!-- Top bar -->
-<div class="topbar">
-  <div class="wrap topbar-inner">
-    <span class="topbar-item">🍛 Pre-order Mon–Wed · Delivered to your door</span>
-    <span class="topbar-item topbar-hide">📞 <a href="tel:+447388582981">+44 7388 582981</a></span>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="site-header" id="top">
+<header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="brand">
-      <span class="brand-mark">TWT</span>
+      <img src="assets/logo.jpg" alt="The Weekend Table" class="brand-mark">
       <span class="brand-text">
-        <span class="brand-name">The Weekend Table</span>
-        <span class="brand-tag">African Home Cooking</span>
+        <strong>The Weekend Table</strong>
+        <em>Good food &middot; Good mood</em>
       </span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#menu">Menu</a>
-      <a href="#how">How It Works</a>
-      <a href="#rewards">Rewards</a>
-      <a href="#story">Our Story</a>
-      <a href="#order" class="nav-cta">Order Now</a>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="https://wa.me/447874704457" class="btn btn-solid btn-sm" target="_blank" rel="noopener">Order Now</a>
   </div>
 </header>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
+  <div class="hero-veil"></div>
   <div class="wrap hero-inner">
-    <div class="hero-content">
-      <span class="hero-eyebrow">Authentic African Comfort Meals</span>
-      <h1>Home-cooked food,<br>made with <em>love</em>.</h1>
-      <p class="hero-sub">Delicious, spicy African home cooking — rich flavours, warming spices and nourishing goodness. The joy of a home-cooked meal, delivered straight to your door.</p>
-      <div class="hero-actions">
-        <a href="#order" class="btn btn-primary">Place a Pre-Order</a>
-        <a href="#menu" class="btn btn-ghost">See the Menu</a>
-      </div>
-      <div class="hero-badges">
-        <span class="hero-badge"><strong>£10</strong> a meal</span>
-        <span class="hero-badge"><strong>Free</strong> local delivery</span>
-        <span class="hero-badge"><strong>Mon–Wed</strong> pre-orders</span>
-      </div>
+    <img src="assets/logo.jpg" alt="The Weekend Table" class="hero-logo">
+    <h1>Homemade food,<br><span class="script">made with love.</span></h1>
+    <p>Delicious, homemade meals made with quality ingredients and real flavour &mdash; freshly prepared for your weekend cravings.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/447874704457" class="btn btn-solid" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <a href="#menu" class="btn btn-ghost">See the Menu</a>
     </div>
   </div>
 </section>
@@ -69,307 +43,126 @@
 <!-- Trust strip -->
 <div class="strip">
   <div class="wrap strip-inner">
-    <div class="strip-item"><span>🍲</span> Freshly cooked to order</div>
-    <div class="strip-item"><span>🌶️</span> Bold, authentic spices</div>
-    <div class="strip-item"><span>🚚</span> Delivered to your door</div>
-    <div class="strip-item"><span>❤️</span> Made with tradition</div>
+    <span>Fresh ingredients</span>
+    <span>Quality ingredients</span>
+    <span>Homemade with love</span>
+    <span>Good food, good mood</span>
   </div>
 </div>
 
 <!-- Menu -->
 <section class="section" id="menu">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Our Menu</span>
-      <h2>Flavour-packed plates, around £10</h2>
-      <p class="section-lead">Generous portions of homemade African comfort food, crafted with care and passion. Perfect for lunch, dinner, family meals, or a comforting treat.</p>
-    </div>
-
-    <div class="menu-grid">
-      <article class="dish">
-        <div class="dish-img" style="background-image:url('assets/dish-jollof.jpg')"></div>
-        <div class="dish-body">
-          <div class="dish-top">
-            <h3>Jollof Rice</h3>
-            <span class="dish-price">£10</span>
-          </div>
-          <p>Our signature smoky, spicy tomato jollof rice, simmered slow in rich West African spices. Served with your choice of chicken or turkey.</p>
-          <div class="dish-tags"><span>🍗 Chicken</span><span>🦃 Turkey</span></div>
+    <h2 class="rule">Mains</h2>
+    <div class="grid grid-2">
+      <article class="card">
+        <div class="card-img" style="background-image:url('assets/mains-chicken.jpg')"></div>
+        <div class="card-body">
+          <h3>Peppered Chicken</h3>
+          <p>Thighs and legs</p>
+          <span class="price">£7</span>
         </div>
       </article>
-
-      <article class="dish">
-        <div class="dish-img" style="background-image:url('assets/dish-friedrice.jpg')"></div>
-        <div class="dish-body">
-          <div class="dish-top">
-            <h3>Fried Rice</h3>
-            <span class="dish-price">£10</span>
-          </div>
-          <p>Fragrant African-style fried rice packed with vegetables and warming seasoning. Comforting, hearty and full of flavour. Choice of chicken or turkey.</p>
-          <div class="dish-tags"><span>🍗 Chicken</span><span>🦃 Turkey</span></div>
-        </div>
-      </article>
-
-      <article class="dish">
-        <div class="dish-img" style="background-image:url('assets/dish-protein.jpg')"></div>
-        <div class="dish-body">
-          <div class="dish-top">
-            <h3>Add Extra Protein</h3>
-            <span class="dish-price">from £3</span>
-          </div>
-          <p>Want it extra hearty? Add an additional portion of tender, well-seasoned chicken or turkey to any plate. Just let us know when you order.</p>
-          <div class="dish-tags"><span>🌶️ Spice it up</span><span>➕ Extra portion</span></div>
+      <article class="card">
+        <div class="card-img" style="background-image:url('assets/mains-turkey.jpg')"></div>
+        <div class="card-body">
+          <h3>Peppered Turkey Wings</h3>
+          <p>&nbsp;</p>
+          <span class="price">£7</span>
         </div>
       </article>
     </div>
 
-    <p class="menu-note">🌿 Every meal is home-cooked fresh on the day. Got a spice preference — mild, medium or fiery? Tell us in your order and we'll cook it just how you like it.</p>
-  </div>
-</section>
-
-<!-- How it works -->
-<section class="section section-alt" id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">How It Works</span>
-      <h2>Pre-order in 3 easy steps</h2>
-      <p class="section-lead">We cook fresh to order, so meals are made just for you. Here's how to get yours.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <span class="step-num">1</span>
-        <h3>Place your order</h3>
-        <p>Order any time <strong>Monday to Wednesday</strong> on a pre-order basis. Pick your dish, protein and quantity below.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">2</span>
-        <h3>We cook it fresh</h3>
-        <p>Your meal is home-cooked from scratch with authentic spices and wholesome ingredients — never mass-produced.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">3</span>
-        <h3>Delivered to you</h3>
-        <p>We bring it straight to your door, hot and ready to enjoy. Great food, homemade comfort, zero fuss.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Rewards / Promotions -->
-<section class="section" id="rewards">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Specials & Rewards</span>
-      <h2>More flavour, more reward</h2>
-      <p class="section-lead">Great food that rewards every order. Here's what's on offer at The Weekend Table.</p>
-    </div>
-    <div class="rewards-grid">
-      <div class="reward">
-        <span class="reward-icon">✨</span>
-        <h3>Taste of Home Deal</h3>
-        <p>A delicious, complete meal filled with authentic flavours and homemade goodness. Around £10.</p>
-      </div>
-      <div class="reward">
-        <span class="reward-icon">🔥</span>
-        <h3>Spice Lovers Special</h3>
-        <p>Discover our boldest African flavours with signature spicy dishes made to warm the soul.</p>
-      </div>
-      <div class="reward">
-        <span class="reward-icon">❤️</span>
-        <h3>Family &amp; Friends Feast</h3>
-        <p>Share the comfort of home with great-value meals made for sharing with the people you love.</p>
-      </div>
-      <div class="reward">
-        <span class="reward-icon">🌿</span>
-        <h3>Healthy &amp; Hearty Choice</h3>
-        <p>Wholesome ingredients, nourishing meals and satisfying flavours you'll come back for.</p>
-      </div>
-      <div class="reward reward-feature">
-        <span class="reward-icon">🎁</span>
-        <h3>Spend &amp; Enjoy More</h3>
-        <p>Spend over a set amount and receive a <strong>FREE additional plate</strong> — the perfect way to share more of our home-cooked flavours.</p>
-      </div>
-      <div class="reward reward-feature">
-        <span class="reward-icon">⭐</span>
-        <h3>Loyalty Card Reward</h3>
-        <p>Collect a stamp every time you enjoy a meal with us. After your <strong>5th stamp, your next meal is FREE</strong> — our thank you for your support.</p>
-      </div>
-    </div>
-    <p class="rewards-tagline">Great food. Authentic flavours. Homemade comfort. Rewarding every order.</p>
-  </div>
-</section>
-
-<!-- Story -->
-<section class="section section-story" id="story">
-  <div class="wrap story-inner">
-    <div class="story-media">
-      <div class="story-img" style="background-image:url('assets/story-mealprep.jpg')"></div>
-      <div class="story-img story-img-2" style="background-image:url('assets/story-plantain.jpg')"></div>
-    </div>
-    <div class="story-content">
-      <span class="eyebrow">Our Story</span>
-      <h2>The comfort of home, in every bite</h2>
-      <p>The Weekend Table is African home cooking made with love, tradition and wholesome ingredients. Every dish brings the comfort of home — rich flavours, warming spices, nourishing goodness, and the joy of sharing a meal that feeds both body and soul.</p>
-      <p>We believe good food should taste like it was cooked by family — because ours is. No shortcuts, no mass production. Just authentic, hearty plates prepared fresh and delivered with care.</p>
-      <a href="#order" class="btn btn-primary">Order Your Meal</a>
+    <h2 class="rule">Sides</h2>
+    <div class="grid grid-5">
+      <article class="card card-sm">
+        <div class="card-img" style="background-image:url('assets/side-plantain.jpg')"></div>
+        <div class="card-body">
+          <h3>Fried Plantain</h3>
+          <p>About 4&ndash;5 pieces</p>
+          <span class="price">£3</span>
+        </div>
+      </article>
+      <article class="card card-sm">
+        <div class="card-img" style="background-image:url('assets/side-friedrice.jpg')"></div>
+        <div class="card-body">
+          <h3>Fried Rice</h3>
+          <p>Per portion</p>
+          <span class="price">£5</span>
+        </div>
+      </article>
+      <article class="card card-sm">
+        <div class="card-img" style="background-image:url('assets/side-jollof.jpg')"></div>
+        <div class="card-body">
+          <h3>Jollof Rice</h3>
+          <p>Per portion</p>
+          <span class="price">£5</span>
+        </div>
+      </article>
+      <article class="card card-sm">
+        <div class="card-img" style="background-image:url('assets/side-whiterice.jpg')"></div>
+        <div class="card-body">
+          <h3>Steamed White Rice</h3>
+          <p>Per portion</p>
+          <span class="price">£3</span>
+        </div>
+      </article>
+      <article class="card card-sm">
+        <div class="card-img" style="background-image:url('assets/side-beef.jpg')"></div>
+        <div class="card-body">
+          <h3>Peppered Beef Sauce</h3>
+          <p>Per portion</p>
+          <span class="price">£6</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- Order -->
+<!-- How to order -->
 <section class="section section-alt" id="order">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Place Your Pre-Order</span>
-      <h2>Order your home-cooked meal</h2>
-      <p class="section-lead">Pre-orders taken Monday to Wednesday. Fill in the details below and we'll be in touch to confirm your delivery.</p>
-    </div>
-
-    <div class="order-wrap">
-      <form class="order-form" id="orderForm">
-        <div class="field">
-          <label>Your name</label>
-          <input type="text" name="name" required placeholder="e.g. Sarah Johnson">
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label>Phone number</label>
-            <input type="tel" name="phone" required placeholder="07xxx xxxxxx">
-          </div>
-          <div class="field">
-            <label>Delivery day</label>
-            <select name="day" required>
-              <option value="">Choose a day…</option>
-              <option>Monday</option>
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-              <option>Thursday</option>
-              <option>Friday</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field">
-          <label>Choose your dish</label>
-          <div class="choice-grid" data-group="dish">
-            <label class="choice"><input type="radio" name="dish" value="Jollof Rice" data-price="10" required><span class="choice-box"><strong>Jollof Rice</strong><small>£10</small></span></label>
-            <label class="choice"><input type="radio" name="dish" value="Fried Rice" data-price="10"><span class="choice-box"><strong>Fried Rice</strong><small>£10</small></span></label>
-          </div>
-        </div>
-
-        <div class="field">
-          <label>Protein</label>
-          <div class="choice-grid" data-group="protein">
-            <label class="choice"><input type="radio" name="protein" value="Chicken" required><span class="choice-box"><strong>🍗 Chicken</strong></span></label>
-            <label class="choice"><input type="radio" name="protein" value="Turkey"><span class="choice-box"><strong>🦃 Turkey</strong></span></label>
-          </div>
-        </div>
-
-        <div class="field-row">
-          <div class="field">
-            <label>How many meals?</label>
-            <input type="number" name="qty" min="1" max="20" value="1" required id="qty">
-          </div>
-          <div class="field">
-            <label>Spice level</label>
-            <select name="spice">
-              <option>Mild</option>
-              <option selected>Medium</option>
-              <option>Hot 🔥</option>
-              <option>Extra hot 🌶️🌶️</option>
-            </select>
-          </div>
-        </div>
-
-        <label class="check"><input type="checkbox" name="extra" id="extraProtein" value="Yes"> Add extra protein portion (+£3 each meal)</label>
-
-        <div class="field">
-          <label>Delivery address</label>
-          <textarea name="address" rows="2" required placeholder="House number, street, area, postcode"></textarea>
-        </div>
-
-        <div class="field">
-          <label>Anything else? (optional)</label>
-          <textarea name="notes" rows="2" placeholder="Allergies, preferences, special requests…"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send My Pre-Order</button>
-        <p class="form-note">No payment taken now — we'll message you to confirm your order and delivery.</p>
-      </form>
-
-      <aside class="order-summary">
-        <h3>Your order</h3>
-        <div class="sum-line"><span>Dish</span><b id="sumDish">—</b></div>
-        <div class="sum-line"><span>Protein</span><b id="sumProtein">—</b></div>
-        <div class="sum-line"><span>Quantity</span><b id="sumQty">1</b></div>
-        <div class="sum-line"><span>Extra protein</span><b id="sumExtra">No</b></div>
-        <div class="sum-total"><span>Estimated total</span><b id="sumTotal">£0</b></div>
-        <p class="sum-note">✨ Spend more and unlock a free extra plate. Collect a loyalty stamp with every order — 5 stamps = a free meal!</p>
-        <a href="https://wa.me/447388582981" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">💬 Order on WhatsApp instead</a>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- CTA band -->
-<section class="cta-band">
-  <div class="wrap">
-    <h2>Hungry for home-cooked comfort?</h2>
-    <p>Pre-order Monday to Wednesday and we'll bring authentic African flavours right to your door.</p>
-    <a href="#order" class="btn btn-light">Place Your Order</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <div class="brand brand-footer">
-        <span class="brand-mark">TWT</span>
-        <span class="brand-text">
-          <span class="brand-name">The Weekend Table</span>
-          <span class="brand-tag">African Home Cooking</span>
-        </span>
+    <h2 class="rule">How to Order</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-n">1</span>
+        <h3>Call or WhatsApp</h3>
+        <p>Message us with what you'd like.</p>
       </div>
-      <p class="footer-blurb">Delicious, spicy African home-cooked food made with love, tradition and wholesome ingredients. Delivered to your door.</p>
+      <div class="step">
+        <span class="step-n">2</span>
+        <h3>Pre-order during the week</h3>
+        <p>Place your orders in advance.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">3</span>
+        <h3>Pick up or delivery</h3>
+        <p>Get your meals the easy way.</p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <a href="#menu">Menu</a>
-      <a href="#how">How It Works</a>
-      <a href="#rewards">Rewards</a>
-      <a href="#story">Our Story</a>
-      <a href="#order">Order Now</a>
-    </div>
-    <div class="footer-col">
-      <h4>Ordering</h4>
-      <p class="footer-line">Pre-order: Mon–Wed</p>
-      <p class="footer-line">Meals from £10</p>
-      <p class="footer-line">Free local delivery</p>
-      <p class="footer-line">Fresh, home-cooked</p>
-    </div>
-    <div class="footer-col">
-      <h4>Get In Touch</h4>
-      <p class="footer-line"><a href="tel:+447388582981">+44 7388 582981</a></p>
-      <p class="footer-line"><a href="https://wa.me/447388582981" target="_blank" rel="noopener">WhatsApp us</a></p>
-      <p class="footer-line">Manchester &amp; surrounding areas</p>
+
+    <div class="contact-card">
+      <p class="contact-label">Call / WhatsApp</p>
+      <a href="tel:+447874704457" class="contact-phone">07874 704457</a>
+      <div class="contact-actions">
+        <a href="https://wa.me/447874704457" class="btn btn-solid" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a href="https://www.instagram.com/theweekendtable" class="btn btn-ghost-dark" target="_blank" rel="noopener">@theweekendtable</a>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="wrap">
-      <span>© 2026 The Weekend Table. All rights reserved.</span>
-      <span>Home-cooked with ❤️</span>
-      <span class="photo-credit">Placeholder dish photos: Bukky658, Aderiqueza, James Moore200, Xaymacan (CC BY-SA 4.0, Wikimedia Commons)</span>
-    </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-name">The Weekend Table</p>
+    <p class="foot-tag">Good food &nbsp;&#9670;&nbsp; Good mood</p>
+    <p class="foot-thanks">Thank you for supporting small business &#9825;</p>
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/447388582981" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1S29.1 8.8 29.1 16 23.2 28.8 16 28.8zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1s-1.7-.6-3.2-2c-1.2-1-2-2.3-2.2-2.7s0-.6.2-.8c.2-.2.4-.4.5-.7.2-.2.2-.4.4-.6.1-.3 0-.5 0-.7s-.9-2.1-1.2-2.9c-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
+<a href="https://wa.me/447874704457" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.2 5.9-13.1 13.1-13.1S29.1 8.8 29.1 16 23.2 28.8 16 28.8zm7.2-9.8c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1s-1.7-.6-3.2-2c-1.2-1-2-2.3-2.2-2.7s0-.6.2-.8c.2-.2.4-.4.5-.7.2-.2.2-.4.4-.6.1-.3 0-.5 0-.7s-.9-2.1-1.2-2.9c-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6 1.5 3.9c.2.2 2.7 4.2 6.6 5.9.9.4 1.6.6 2.2.8.9.3 1.7.2 2.4.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
 </a>
 
-<script src="script.js"></script>
 </body>
 </html>
