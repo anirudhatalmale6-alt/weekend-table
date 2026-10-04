@@ -126,5 +126,7 @@ h2.rule::before,h2.rule::after{content:'';height:1px;background:rgba(169,128,63,
   h2.rule::before,h2.rule::after{max-width:46px}
 }
 @media(max-width:400px){
-  .grid-5{grid-template-columns:1fr}
+  .grid{gap:.8rem}
+  .card-sm .card-body{padding:12px 8px 14px}
+  .card-sm .card-body h3{font-size:.92rem}
 }
