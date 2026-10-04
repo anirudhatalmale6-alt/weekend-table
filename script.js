@@ -6,6 +6,10 @@
   var sendBtn = document.getElementById('send-order');
   if (!picks.length || !list || !totalEl || !sendBtn) return;
 
+  var allergyToggle = document.getElementById('allergy-toggle');
+  var allergyDetail = document.getElementById('allergy-detail');
+  var allergyText = document.getElementById('allergy-text');
+
   var state = picks.map(function (el) {
     return {
       el: el,
@@ -57,6 +61,25 @@
     totalEl.textContent = money(total);
     sendBtn.classList.toggle('is-disabled', total === 0);
 
+    var hasAllergy = allergyToggle && allergyToggle.checked;
+    var allergyNote = hasAllergy ? (allergyText.value || '').trim() : '';
+
+    var allergyLine = '';
+    if (hasAllergy) {
+      allergyLine = allergyNote
+        ? 'Allergy / dietary: ' + allergyNote
+        : 'I have an allergy or dietary requirement — I\'ll confirm the details with you.';
+    }
+
+    var existing = list.querySelector('.summary-allergy');
+    if (existing) existing.remove();
+    if (hasAllergy) {
+      var li = document.createElement('li');
+      li.className = 'summary-allergy';
+      li.textContent = allergyNote ? 'Allergy: ' + allergyNote : 'Allergy — details to confirm';
+      list.appendChild(li);
+    }
+
     var msg;
     if (!lines.length) {
       msg = 'Hi! I\'d like to place an order with The Weekend Table please.';
@@ -65,6 +88,7 @@
         lines.map(function (l) { return l.text + ' — ' + money(l.sub); }).join('\n') +
         '\n\nTotal: ' + money(total);
     }
+    if (allergyLine) msg += '\n\n' + allergyLine;
     sendBtn.href = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(msg);
   }
 
@@ -76,6 +100,16 @@
       if (item.qty > 0) { item.qty--; render(); }
     });
   });
+
+  if (allergyToggle && allergyDetail && allergyText) {
+    allergyToggle.addEventListener('change', function () {
+      allergyDetail.hidden = !allergyToggle.checked;
+      if (allergyToggle.checked) allergyText.focus();
+      else allergyText.value = '';
+      render();
+    });
+    allergyText.addEventListener('input', render);
+  }
 
   render();
 })();
